@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="/Users/rajakumar/Desktop/Full stack html:css:bootstarp/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Lazeez Resturent</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body class="">
+        <!--Navigation bar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">MTX</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Food
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="vegfood.html">Veg Food</a>
+                    <a class="dropdown-item" href="non-vegfood.html">Non-Veg Food</a>
+                    <a class="dropdown-item" href="chineseFood.html">Chinese Food</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Credentials<span class="sr-only">(current)</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="Login.html">Login</a>
+                    <a class="dropdown-item" href="Registration.html">Registration</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ContactUs.html">Contact Us</a>
+                </li>
+                </ul>
+            </div>
+        </nav>
+        <!---->
+        <div>
+            <div class="row full-width">
+                <div class="col-3 p-5 mt-5">
+                    <div class="sticky-top">
+                        <h4>Choose Your Taste</h4>
+                    
+                        <div id="list-example" class="list-group">
+                            <a class="list-group-item list-group-item-action" href="#list-item-1">Veg Food</a>
+                            <a class="list-group-item list-group-item-action" href="#list-item-2">Non Veg Food</a>
+                            <a class="list-group-item list-group-item-action" href="#list-item-3">Chinese</a>
+                        </div>
+                    </div>
+
+                </div>
+            <div class="col p-5">
+                <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+                    <h4 id="list-item-1">Veg Food</h4>
+                    <div class="row mt-4">
+                        <div class="col-4">
+                            <div class="card shoping-card" style="width: 18rem;">
+                                <img class="card-img-top shoping-image-border" src="https://b.zmtcdn.com/data/pictures/7/19680027/783e2101656c29a3827fe9b4407d647a_o2_featured_v2.jpg?output-format=webp"/>
+                                <div class="card-body">
+                                  
+                                  <div class="row ">
+                                      <div class="col">
+                                        <h5 class="card-title">Veg Burger</h5>
+                                      </div>
+                                      <div class="col" style="text-align: end;">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                        <div class="col">
+                                            Veg,Food,Burger
+                                        </div>
+                                        <div class="col" style="text-align: end;">
+                                            $25
+                                        </div>
+                                    </div>
+                                  <!-- <p class="card-text"><del>$200</del> $100</p> -->
+                                  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card shoping-card" style="width: 18rem;">
+                                <img class="card-img-top shoping-image-border" src="https://b.zmtcdn.com/data/pictures/0/19107750/e1ef977e8d91963ef7d74c0e61dc4da1_o2_featured_v2.jpg?output-format=webp" alt="Card image cap">
+                                <div class="card-body">
+                                  
+                                  <div class="row ">
+                                      <div class="col">
+                                        <h5 class="card-title">Pav Bhaji</h5>
+                                      </div>
+                                      <div class="col" style="text-align: end;">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                        <div class="col">
+                                            Marathi,Food,Veg
+                                        </div>
+                                        <div class="col" style="text-align: end;">
+                                            $20
+                                        </div>
+                                    </div>
+                                  <!-- <p class="card-text"><del>$200</del> $100</p> -->
+                                  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card shoping-card" style="width: 18rem;">
+                                <img class="card-img-top shoping-image-border" src="https://b.zmtcdn.com/data/pictures/8/19882038/c9ab663d8719d92cce581ac2565887e3_o2_featured_v2.jpg?output-format=webp" alt="Card image cap">
+                                <div class="card-body">
+                                  
+                                  <div class="row ">
+                                      <div class="col">
+                                        <h5 class="card-title">Dosa</h5>
+                                      </div>
+                                      <div class="col" style="text-align: end;">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                        <div class="col">
+                                            South,Food,Indian
+                                        </div>
+                                        <div class="col" style="text-align: end;">
+                                            $50
+                                        </div>
+                                    </div>
+                                  <!-- <p class="card-text"><del>$200</del> $100</p> -->
+                                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        
+                        <div class="col-4">
+                            <div class="card shoping-card" style="width: 18rem;">
+                                <img class="card-img-top shoping-image-border" src="https://b.zmtcdn.com/data/pictures/8/18935648/f764c0292bf7f13c160ac891f70ce421_o2_featured_v2.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                  
+                                  <div class="row ">
+                                      <div class="col">
+                                        <h5 class="card-title">Parathas</h5>
+                                      </div>
+                                      <div class="col" style="text-align: end;">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                        <div class="col">
+                                            Punjabi,Food
+                                        </div>
+                                        <div class="col" style="text-align: end;">
+                                            $300
+                                        </div>
+                                    </div>
+                                  <!-- <p class="card-text"><del>$200</del> $100</p> -->
+                                  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card shoping-card" style="width: 18rem;">
+                                <img class="card-img-top shoping-image-border" src="https://b.zmtcdn.com/data/pictures/chains/4/18705064/b6cfbb9e61646419ceb4f74ccb3af178_o2_featured_v2.png" alt="Card image cap">
+                                <div class="card-body">
+                                  
+                                  <div class="row ">
+                                      <div class="col">
+                                        <h5 class="card-title">Litti</h5>
+                                      </div>
+                                      <div class="col" style="text-align: end;">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                        <div class="col">
+                                            Veg,Food,Bihar
+                                        </div>
+                                        <div class="col" style="text-align: end;">
+                                            $600
+                                        </div>
+                                    </div>
+                                  <!-- <p class="card-text"><del>$200</del> $100</p> -->
+                                  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4"></div>
+                    </div>
+
+                    <!--Non veg-->
+                    <h4 id="list-item-2">Non-Veg Food</h4>
+                    <div class="row mt-4">
+                        <div class="col-4">
+                            <div class="card shoping-card" style="width: 18rem;">
+                                <img class="card-img-top shoping-image-border" src="https://b.zmtcdn.com/data/pictures/5/4000195/1ce512bd8567d3b3c7acefdbc4715955_o2_featured_v2.png" alt="Card image cap">
+                                <div class="card-body">
+                                  
+                                  <div class="row ">
+                                      <div class="col">
+                                        <h5 class="card-title">Non-Veg Burger</h5>
+                                      </div>
+                                      <div class="col" style="text-align: end;">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                        <div class="col">
+                                            Veg,Food,Burger
+                                        </div>
+                                        <div class="col" style="text-align: end;">
+                                            $25
+                                        </div>
+                                    </div>
+                                  <!-- <p class="card-text"><del>$200</del> $100</p> -->
+                                  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card shoping-card" style="width: 18rem;">
+                                <img class="card-img-top shoping-image-border" src="https://b.zmtcdn.com/data/pictures/3/18629973/7b953c6f6a9c5b207845515416bb41d4_o2_featured_v2.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                  
+                                  <div class="row ">
+                                      <div class="col">
+                                        <h5 class="card-title">Chicken Mashala</h5>
+                                      </div>
+                                      <div class="col" style="text-align: end;">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                        <div class="col">
+                                            Marathi,Food,Veg
+                                        </div>
+                                        <div class="col" style="text-align: end;">
+                                            $20
+                                        </div>
+                                    </div>
+                                  <!-- <p class="card-text"><del>$200</del> $100</p> -->
+                                  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card shoping-card" style="width: 18rem;">
+                                <img class="card-img-top shoping-image-border" src="https://b.zmtcdn.com/data/pictures/7/4000027/8615d93d35f826990e5497544823071f_o2_featured_v2.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                  
+                                  <div class="row ">
+                                      <div class="col">
+                                        <h5 class="card-title">Butter Chicken</h5>
+                                      </div>
+                                      <div class="col" style="text-align: end;">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                        <div class="col">
+                                            South,Food,Indian
+                                        </div>
+                                        <div class="col" style="text-align: end;">
+                                            $50
+                                        </div>
+                                    </div>
+                                  <!-- <p class="card-text"><del>$200</del> $100</p> -->
+                                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        
+                        <div class="col-4">
+                            <div class="card shoping-card" style="width: 18rem;">
+                                <img class="card-img-top shoping-image-border" src="/Users/rajakumar/Desktop/Full stack html:css:bootstarp/media/image2.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                  
+                                  <div class="row ">
+                                      <div class="col">
+                                        <h5 class="card-title">Egg Roll</h5>
+                                      </div>
+                                      <div class="col" style="text-align: end;">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                        <div class="col">
+                                            Punjabi,Food
+                                        </div>
+                                        <div class="col" style="text-align: end;">
+                                            $300
+                                        </div>
+                                    </div>
+                                  <!-- <p class="card-text"><del>$200</del> $100</p> -->
+                                  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card shoping-card" style="width: 18rem;">
+                                <img class="card-img-top shoping-image-border" src="https://b.zmtcdn.com/webFrontend/64dffaa58ffa55a377cdf42b6a690e721585809275.png?fit=around|402:360&crop=402:360;*,*" alt="Card image cap">
+                                <div class="card-body">
+                                  
+                                  <div class="row ">
+                                      <div class="col">
+                                        <h5 class="card-title">Chicken Chilly</h5>
+                                      </div>
+                                      <div class="col" style="text-align: end;">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                        <div class="col">
+                                            Veg,Food,Bihar
+                                        </div>
+                                        <div class="col" style="text-align: end;">
+                                            $600
+                                        </div>
+                                    </div>
+                                  <!-- <p class="card-text"><del>$200</del> $100</p> -->
+                                  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card shoping-card" style="width: 18rem;">
+                                <img class="card-img-top shoping-image-border" src="https://b.zmtcdn.com/data/pictures/chains/5/4000045/989e2d25af587b632a623e4a819bc298_o2_featured_v2.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                  
+                                  <div class="row ">
+                                      <div class="col">
+                                        <h5 class="card-title">Chicken Paraths</h5>
+                                      </div>
+                                      <div class="col" style="text-align: end;">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                        <div class="col">
+                                            Veg,Food,Bihar
+                                        </div>
+                                        <div class="col" style="text-align: end;">
+                                            $600
+                                        </div>
+                                    </div>
+                                  <!-- <p class="card-text"><del>$200</del> $100</p> -->
+                                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Chinese-->
+                    <h4 id="list-item-3">Chinese Food</h4>
+                    <div class="row mt-4">
+                        
+                        <div class="col-4">
+                            <div class="card shoping-card" style="width: 18rem;">
+                                <img class="card-img-top shoping-image-border" src="https://b.zmtcdn.com/data/pictures/chains/4/4000004/9410759d611db9c62c3acc23c1f27e06_o2_featured_v2.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                  
+                                  <div class="row ">
+                                      <div class="col">
+                                        <h5 class="card-title">Hot Soup</h5>
+                                      </div>
+                                      <div class="col" style="text-align: end;">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                        <div class="col">
+                                            Chinese,Food,Veg
+                                        </div>
+                                        <div class="col" style="text-align: end;">
+                                            $20
+                                        </div>
+                                    </div>
+                                  <!-- <p class="card-text"><del>$200</del> $100</p> -->
+                                  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card shoping-card" style="width: 18rem;">
+                                <img class="card-img-top shoping-image-border" src="https://b.zmtcdn.com/data/pictures/3/4000013/6e118fe83193856b9ea9e78993344529_o2_featured_v2.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                  
+                                  <div class="row ">
+                                      <div class="col">
+                                        <h5 class="card-title">Sour Soup</h5>
+                                      </div>
+                                      <div class="col" style="text-align: end;">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                        <div class="col">
+                                            Chinese,Food
+                                        </div>
+                                        <div class="col" style="text-align: end;">
+                                            $50
+                                        </div>
+                                    </div>
+                                  <!-- <p class="card-text"><del>$200</del> $100</p> -->
+                                  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card shoping-card" style="width: 18rem;">
+                                <img class="card-img-top shoping-image-border" src="/Users/rajakumar/Desktop/Full stack html:css:bootstarp/media/image2.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                  
+                                  <div class="row ">
+                                      <div class="col">
+                                        <h5 class="card-title">Spring Rolls</h5>
+                                      </div>
+                                      <div class="col" style="text-align: end;">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                        <div class="col">
+                                            Chinese,Food
+                                        </div>
+                                        <div class="col" style="text-align: end;">
+                                            $300
+                                        </div>
+                                    </div>
+                                  <!-- <p class="card-text"><del>$200</del> $100</p> -->
+                                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        
+                        
+                        <div class="col-4">
+                            <div class="card shoping-card" style="width: 18rem;">
+                                <img class="card-img-top shoping-image-border" src="https://b.zmtcdn.com/data/pictures/chains/9/4000269/fa7e190b167b7235b054394fdcd501c9_o2_featured_v2.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                  
+                                  <div class="row ">
+                                      <div class="col">
+                                        <h5 class="card-title">Noodels</h5>
+                                      </div>
+                                      <div class="col" style="text-align: end;">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                        <div class="col">
+                                            Chinese,Veg
+                                        </div>
+                                        <div class="col" style="text-align: end;">
+                                            $600
+                                        </div>
+                                    </div>
+                                  <!-- <p class="card-text"><del>$200</del> $100</p> -->
+                                  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card shoping-card" style="width: 18rem;">
+                                <img class="card-img-top shoping-image-border" src="https://b.zmtcdn.com/data/dish_images/d72e1fdf0588a089e0cb2653427ccae71634401500.png" alt="Card image cap">
+                                <div class="card-body">
+                                  
+                                  <div class="row ">
+                                      <div class="col">
+                                        <h5 class="card-title">Momos</h5>
+                                      </div>
+                                      <div class="col" style="text-align: end;">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                        <div class="col">
+                                            Chinese,Veg
+                                        </div>
+                                        <div class="col" style="text-align: end;">
+                                            $600
+                                        </div>
+                                    </div>
+                                  <!-- <p class="card-text"><del>$200</del> $100</p> -->
+                                  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4"></div>
+                    </div>
+                    <!--Done-->
+                </div>
+            </div>
+            </div>
+        </div>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</html>

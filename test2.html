@@ -1,0 +1,475 @@
+<!-- <html>
+    <head></head>
+    <body>
+        <div id="test"></div>
+    </body>
+    <script>
+        const Data = [{
+            "Name":"Emp1",
+            "Salary":"Kumar",
+            "Email":"test",
+            "mobile":"test"
+        },{
+            "Name":"Emp1",
+            "Salary":"Kumar",
+            "Email":"test",
+            "mobile":"test"
+        },{
+            "Name":"Emp1",
+            "Salary":"Kumar",
+            "Email":"test",
+            "mobile":"test"
+        }]
+        var divId = document.getElementById("test")
+        var table = document.createElement("table")
+        var head = document.createElement("thead");
+        var row  =document.createElement("tr");
+        table.appendChild(head);
+        head.appendChild(row);
+        for (var i=0;i<Object.keys(Data[0]).length;i++){
+            var rowData = document.createElement("th");
+            var text  =document.createTextNode(Object.keys(Data[0])[i])
+            rowData.appendChild(text)
+            row.appendChild(rowData)
+        }
+        var body = document.createElement('tbody');
+        for (var i =0; i<Data.length;i++){
+            
+        }
+        divId.appendChild(table);
+    </script>
+</html> -->
+
+<!-- <html>
+    <head>
+        <Title>java Script table demo</Title>
+    </head>
+    <style>
+        th, td, p, input {
+            font:14px Verdana;
+        }
+        table, th, td 
+        {
+            border: solid 1px #DDD;
+            border-collapse: collapse;
+            padding: 2px 3px;
+            text-align: center;
+        }
+        th {
+            font-weight:bold;
+        }
+    </style>
+
+    <body>
+        <div id="table1"></div>
+        
+    <body>
+    <script>
+        var employee = [{'sid':101,'sname':"keshav",'smarks':95},
+                        {'sid':102,'sname':"shyam",'smarks':94},
+                        {'sid':103,'sname':"Samyak",'smarks':93}];
+
+        var keys=Object.keys(employee[0])
+
+        var table=document.createElement('TABLE');
+        var tableBody = document.createElement('TBODY');
+        table.appendChild(tableBody);
+
+        var tr=document.createElement('TR');
+        tableBody.appendChild(tr);
+
+        for(var i=0;i<Object.keys(employee[0]).length;i++){
+            var th=document.createElement('TH');
+            th.innerHTML=Object.keys(employee[0])[i];
+            tr.appendChild(th);
+        }
+
+        for(var i=0;i<employee.length;i++){
+            var tr=document.createElement('TR');
+            tableBody.appendChild(tr);
+            // console.log(keys.length)
+            for(var j of keys){
+                var td=document.createElement('TD');
+                td.innerHTML=employee[i][j];
+                tr.appendChild(td);
+            }
+        }
+    
+        document.getElementById("table1").innerHTML="hello";
+        document.getElementById("table1").appendChild(table);
+    </script>
+</html> -->
+
+<!-- <html>
+    <head>
+        <Title>java Script table demo</Title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <style>
+        th, p, input {
+            font:14px Verdana;
+        }
+        table 
+        {   
+            margin-top:1% ;
+            margin-left: 0%;
+            border: solid 2px #DDD;
+            padding: 6px 3px;
+            text-align: center;
+            width:50%;
+        }
+        
+        th {
+            font-weight:bold;
+        }
+        table tr:nth-child(even){
+            background-color: bisque;
+        }
+        #maindiv,#formdiv{
+            margin-top: 10%;
+        }
+        
+    </style>
+
+    <body onload="showTable()">
+        <div class="container" id="maindiv">
+            <button type="button" class="btn btn-primary btn-sm" onClick="showForm()">Create</button>
+            <div id="mytable"></div>
+        </div>
+        <div class="container" id="formdiv" style="display:none;">
+            <input type="number" id="sid" placeholder="SID">
+            <input type="text" id="sname" placeholder="SNAME">
+            <input type="number" id="smarks" placeholder="SMARKS">
+            <button type="button" class="btn btn-success btn-sm" onclick="addRow()">Save</button>
+            <button type="button" class="btn btn-secondary btn-sm" onclick="showData()">Back</button>
+        </div>
+    <body>
+    <script>
+        function showForm(){
+            document.getElementById("maindiv").style.display="none";
+            document.getElementById("formdiv").style.display="block";
+        }
+        function showData(){
+            document.getElementById("maindiv").style.display="block";
+            document.getElementById("formdiv").style.display="none";
+        }
+        function showTable(){
+            var employee = [{'sid':101,'sname':"keshav",'smarks':95},
+                            {'sid':102,'sname':"shyam",'smarks':94},
+                            {'sid':103,'sname':"Samyak",'smarks':93}];
+
+            var keys=Object.keys(employee[0])
+
+            var table=document.createElement('TABLE');
+            table.setAttribute("id","maintable");
+            var tableBody = document.createElement('TBODY');
+            table.appendChild(tableBody);
+
+            var tr=document.createElement('TR');
+            tableBody.appendChild(tr);
+
+            for(var i=0;i<Object.keys(employee[0]).length;i++){
+                var th=document.createElement('TH');
+                th.innerHTML=Object.keys(employee[0])[i];
+                tr.appendChild(th);
+            }
+            for(var i=0;i<employee.length;i++){
+                var tr=document.createElement('TR');
+                tableBody.appendChild(tr);
+                for(var j=0;j<keys.length;j++){
+                    var td=document.createElement('TD');
+                    td.innerHTML=(employee[i])[keys[j]];
+                    tr.appendChild(td);
+                }
+
+                var td=document.createElement('TD');
+                var but1=document.createElement('Button');
+                but1.setAttribute("type", "button");
+                but1.setAttribute("class","btn btn-link btn-sm");
+                but1.setAttribute("onClick","deleteRow1(this)");
+                but1.appendChild(document.createTextNode("Delete"));
+                td.appendChild(but1);
+                tr.appendChild(td);
+
+                var td=document.createElement('TD');
+                var but2=document.createElement('Button');
+                but2.setAttribute("type", "button");
+                but2.setAttribute("class","btn btn-link btn-sm");
+                but2.setAttribute("onClick","editRow(this)");
+                but2.appendChild(document.createTextNode("Edit"));
+                td.appendChild(but2);
+                tr.appendChild(td);
+            }
+            document.getElementById("mytable").appendChild(table);
+        }
+
+        function deleteRow1(obj){
+            var index = obj.parentNode.parentNode.rowIndex;
+            console.log(index);
+            document.getElementById("maintable").deleteRow(index);
+        }
+
+        function addRow(){
+            document.getElementById("maindiv").style.display="block";
+            document.getElementById("formdiv").style.display="none";
+            var table = document.getElementById("maintable");
+            var sid = document.getElementById("sid");
+            var sname = document.getElementById("sname");
+            var smarks = document.getElementById("smarks");
+        
+            var rowCount = table.rows.length;
+            var row = table.insertRow(rowCount);
+        
+            row.insertCell(0).innerHTML= sid.value;
+            row.insertCell(1).innerHTML= sname.value;
+            row.insertCell(2).innerHTML= smarks.value;
+            row.insertCell(3).innerHTML='<button type="button" class="btn btn-link btn-sm" onClick="deleteRow1(this)">Delete</button>';
+            row.insertCell(4).innerHTML='<button type="button" class="btn btn-link btn-sm" onClick="editRow(this)">Edit</button>';
+        }
+
+        function editRow(obj){
+            console.log(obj)
+            //var row = table.insertRow(index);
+            var index = obj.parentNode.parentNode.rowIndex;
+            var row = obj.parentNode.parentNode;
+            var table = document.getElementById("maintable");
+            console.log(table.rows[index].cells[0].innerText)
+            var test ="<input type='text' id='sid' placeholder='SID' value=".concat(table.rows[index].cells[0].innerText+">");
+            row.deleteCell(0)
+            row.deleteCell(0)
+            row.deleteCell(0)
+            row.deleteCell(0)
+            row.deleteCell(0)
+            
+            row.insertCell(0).innerHTML= test
+            row.insertCell(1).innerHTML= '<input type="text" id="sname" placeholder="SNAME">';
+            row.insertCell(2).innerHTML= '<input type="number" id="smarks" placeholder="SMARKS">';
+            row.insertCell(3).innerHTML='<button type="button" class="btn btn-link btn-sm" onClick="deleteRow1(this)">Delete</button>';
+            row.insertCell(4).innerHTML='<button type="button" class="btn btn-link btn-sm" onClick="editRow(this)">Save</button>';
+
+    }
+    </script>
+</html> -->
+
+
+<!-- <html>
+  <head>
+
+  </head>
+  <body>
+      <p id="data">head</p>
+      <input type="text" id="age">
+      <input type="button" onclick="validateage()" value="age">
+
+      <input type="text" id="num1">
+      <input type="text" id="num2">
+      <input type="button" onclick="adddata()" value="Add">
+
+      <input type="text" id="test1">
+      <input type="button" onclick="addvalue()" value="Value">
+    <script>
+      var marks=20;
+      var naem = "charan";
+      var passed = true;
+      alert ("Name : "+naem+", marks : "+marks+" passed : "+ passed);
+    var x = 20;
+    alert("Value of X : " + x);
+    var x = "test";
+    alert("New value for x : "+ x);
+    var strfirstName = "test";
+    var strSecoundName= "kumar";
+    alert(strfirstName + " " + strSecoundName); 
+
+    var strName = "test"
+    alert("Given Data is : "+ strName);
+    
+    function validateage(){
+        var age = parseInt(document.getElementById('age').value);
+
+        if(age>=18){
+            alert("Legal age");
+        }
+        else{
+            alert("Illegal age");
+        }
+    }
+    function adddata(){
+        var intnum1 = parseInt(document.getElementById('num1').value);
+        var intnum2 = parseInt(document.getElementById('num2').value);
+
+        var num3 = intnum1 + intnum2;
+        alert("sum : " +num3);
+    }
+
+    function addvalue(){
+        var inttest1 = parseInt(document.getElementById('test1').value);
+        var str = "";
+        for (var i = 1; i<=inttest1;i++){
+            str = str + " " + i
+        }
+        document.getElementById('data').innerHTML = str;
+    }
+    var str = "My javascript code for god.";
+    var strToSearch = "god";
+    
+    var index = str.indexOf(strToSearch);
+    alert("index of :" + index);
+
+    var index = str.lastIndexOf(strToSearch);
+    alert("last index: "+ index);
+
+    var index = str.replace("god","me");
+    alert(index);
+
+    alert(strToSearch.toUpperCase());
+    alert(str.toLowerCase());
+
+    var sub = str.substr(3,8);
+    alert("substr:" +sub);
+    </script>
+  </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<!-- <html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="/Users/rajakumar/Desktop/Full stack html:css:bootstarp/css/style.css">
+        <title>Lazeez Resturent</title>
+    </head>
+    <body background="white" style="padding: 100px;">
+        <h1 style="text-align: center;">Employee Table</h1>
+        <input style="    margin-bottom: 10px;" onclick="Add()" type="button" value="Add">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Emp id</th>
+                <th scope="col">Employee Name</th>
+                <th scope="col">Employee salary</th>
+                <th scope="col">Email</th>
+                <th scope="col">Mobile Number</th>
+                <th scope="col">Button</th>
+              </tr>
+            </thead>
+            <tbody id="table-body">
+            </tbody>
+          </table>
+    </body>
+    <script>
+        const Data = [{
+            "Name":"Emp1",
+            "Salary":"Kumar",
+            "Email":"test",
+            "mobile":"test"
+        }]
+        function IterateData(add = false){
+            if( add ){
+                str = "";
+                for( i = 0; i < Data.length; i++ ) {
+                    if( i == Data.length-1){
+                        buttons = "<input onclick=\"Save(" + i + ")\" type=\"button\" value=\"Save\">";
+                    }
+                    else{
+                        buttons = "<input onclick=\"Edit(" + i + ")\" type=\"button\" value=\"Edit\">" + "<input onclick=\"Delete(" + i + ")\" type=\"button\" value=\"Delete\">";
+                    }
+                    str=str+"<tr id=row"+i+"><th scope=\"row\">"+(i+1)+"</th><td>"+Data[i].Name+"</td><td>"+Data[i].Salary+"</td><td>"+Data[i].Email+"</td><td>"+Data[i].mobile+"</td><td>"+buttons+"</td></tr>";
+                }
+            }
+            else
+            {
+                str = "";
+                for(i = 0; i < Data.length; i++){
+                    buttons = "<input onclick=\"Edit(" + i + ")\" type=\"button\" value=\"Edit\">" + "<input onclick=\"Delete(" + i + ")\" type=\"button\" value=\"Delete\">";
+                    str = str + "<tr id=row"+i+"><th scope=\"row\">" + ( i + 1 ) + "</th><td>" + Data[i].Name + "</td><td>" + Data[i].Salary + "</td><td>" + Data[i].Email + "</td><td>" + Data[i].mobile + "</td><td>" + buttons + "</td></tr>";
+                }
+            }
+            document.getElementById("table-body").innerHTML = str;
+        }
+        IterateData()
+        function Add(){
+            Data.push(
+                {
+                    "Name" : "<input type=\"text\" placeholder='Name' id='input1'>",
+                    "Salary" : "<input type=\"text\" placeholder='Salary' id='input2'>",
+                    "Email" : "<input type=\"text\" placeholder='Email' id='input3'>",
+                    "mobile" : "<input type=\"text\" placeholder='Mobile' id='input4'>"
+                }
+            );
+            IterateData( add = true );
+            
+        }
+
+        function Edit( i ){
+            var test = document.getElementById('row'+i)
+            test.innerHTML = 
+                "<tr id=row"+i+"><th scope=\"row\">" + ( i + 1 ) + "</th><td><input type=\"text\" placeholder='Name' id='input1' value="+Data[i].Name+"></td>"+
+                "<td><input type=\"text\" placeholder='Salary' id='input2' value="+Data[i].Salary+"></td>"+
+                "<td><input type=\"text\" placeholder='Email' id='input3' value="+Data[i].Email+"></td>"+
+                "<td><input type=\"text\" placeholder='Mobile' id='input4' value="+Data[i].mobile+"></td>"+
+                "<td><input onclick=\"Save("+ i +")\" type=\"button\" value=\"Save\">" + "<input onclick=\"Delete("+ i +")\" type=\"button\" value=\"Delete\"></td>";
+        }
+
+        function Delete(i){
+            Data.splice(i,1);
+            IterateData();
+        }
+
+        function Save(i){
+            
+            var input1 = document.getElementById('input1').value;
+            var input2 = document.getElementById('input2').value;
+            var input3 = document.getElementById('input3').value;
+            var input4 = document.getElementById('input4').value;
+            var reLogin = /\S+@\S+\.\S+/;
+            boolLogin = reLogin.test(input3);
+
+            var mobile = /^([+]\d{2})?\d{10}$/
+            boolMObile = mobile.test(input4);
+
+            var salary = /^\d+$/;
+            boolsalary  = salary.test(input2);
+
+            if(!boolsalary || !boolLogin || !boolMObile){
+                alert("Please provide valid data");
+            }
+            else{
+                var test  = {
+                    "Name":input1,
+                    "Salary":input2,
+                    "Email":input3,
+                    "mobile":input4,
+                }
+
+                Data[i] = test;
+                
+                var str=''
+                var buttons = "<input onclick=\"Edit(" + i + ")\" type=\"button\" value=\"Edit\">" + "<input onclick=\"Delete(" + i + ")\" type=\"button\" value=\"Delete\">";
+                var str = str + "<th scope=\"row\">" + ( i + 1 ) + "</th><td>" + Data[i].Name + "</td><td>" + Data[i].Salary + "</td><td>" + Data[i].Email + "</td><td>" + Data[i].mobile + "</td><td>" + buttons + "</td>";
+                var element  = document.getElementById('row'+i);
+                
+                element.innerHTML = str;
+            }
+            
+        }
+        
+    </script>
+</html> -->
+
+
+<html>
+    <body>
+        <form name="test" onsubmit="return validate()">
+            <input type="text" name ="test1" value= "test2" id="test1">
+            <input type="submit" value="test">
+        </form>
+    </body>
+    <script>
+        function validate(){
+        var test11= document.forms['test']["test1"]
+        console.log(test11);}
+    </script>
+</html>

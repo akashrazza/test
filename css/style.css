@@ -1,0 +1,78 @@
+.footer{
+    color: white;
+}
+
+#carouselExampleIndicators{
+    height: 35rem;
+}
+.carousel-item > img{
+    height: 35rem;
+    object-fit: cover;
+}
+.Card-custom{
+    border: 0rem;
+    align-items: center;
+    text-align: center;
+}
+.shoping-card{
+
+    border: 0rem;
+}
+.checked{
+    color: green;
+}
+.card-image{
+    /* border-radius: 10rem;
+     */
+     border-radius: 10rem;
+     width: 10rem;
+     height: 10rem;
+}
+.body-background-image{
+    background-image: url("/Users/rajakumar/Desktop/Full stack html:css:bootstarp/media/image10.jpg");
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.form-row > col {
+    padding: 10px;
+}
+.card-header1{
+    text-align: center;
+    border-radius: 0rem;
+    color: white;
+    font-size: 2rem;
+    background-image: linear-gradient(47deg, #0f0f20, #0000004f);
+    font-family: cursive;
+}
+.list-group-item{
+    border:0rem;
+}
+.shoping-image-border{
+    border-radius: 15px;
+}
+.body-background-image-contact-us{
+    background-image: url("/Users/rajakumar/Desktop/Full stack html:css:bootstarp/media/image11.jpg");
+    background-repeat: no-repeat;
+    background-size: cover
+}
+.card-header1-contact{
+    text-align: center;
+    border-radius: 0rem;
+    color: white;
+    font-size: 2rem;
+    background-image: linear-gradient(
+320deg, #518b83, #0000004f);
+    font-family: cursive;
+}
+/* 
+td, th {
+    border: 0px solid #459483;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #459483;
+  }
+   */

@@ -1,0 +1,73 @@
+<html>
+    <body>
+
+    </body>
+    <script>
+        function dislayData(a,b,c=20){
+            console.log(`a${a}  b${b}   c${c}`);
+        }
+        // dislayData(20,30,99);
+
+        function BasicSalary(hra,ta,da){
+            var gross = hra + ta + da;
+            var tax = hra-1000;
+            return gross+tax;
+        }
+        // console.log(BasicSalary(100,200,3000));
+
+        //Rest Opeartor
+        function Test(a,...b){
+            console.log(`a:: ${a}  b::${typeof b}`);
+        }
+        // Test(20,30,40,50,60);
+
+        //Spread Operator
+        var arr = ['mango','appale','banana'];
+        // console.log(['papaya' ,...arr]);
+
+        //Destructing array
+        var array = [10,20,30];
+        const [x,y,z] = array;
+        // console.log(`a: ${x} b:${y} c:${z}`);
+        //Arrow Function
+        //With Paraemters
+        const ArrowFunction = (num1,num2) =>{
+            console.log(num1,num2);
+        }
+        // ArrowFunction(19,20);    
+        //Without Parameters
+        var TestWithoutParameters = (a,...b) =>{
+            console.log("My name is raja");
+            console.log(a,b);
+        }
+        // TestWithoutParameters(10,20,30,40);
+        //Withour Paranthesis
+        const TestWithoutParanthesis = num =>{
+            var  result = 1;
+            for (var i=1;i<=num;i++){
+                result=result*i;
+            }
+            console.log(result);
+        }
+        // TestWithoutParanthesis(5);
+         var arrr=[...array,...arr];
+        for (var ele of arrr){
+            console.log(ele);
+        }
+
+        var sucess = (message) =>{console.log("message :: "+ message);}
+        var Faliure = (message) => {console.log("message :: "+message);}
+
+        var test  = (age)=>{
+            return new Promise((a1,a2)=>{
+                if(age>18){
+                    a1("sucess");
+                }
+                else{
+                    a2("faliure");
+                }
+            })
+        }
+        test(2).then(sucess,Faliure);
+    </script>
+</html>
